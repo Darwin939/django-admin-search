@@ -1,6 +1,9 @@
 {% extends "admin/change_list.html" %}
 {% load admin_list advanced_search_form %}
 
+
+
+{% block search %}
 <style>
   .advanced_search_form_body{
     z-index: 1;
@@ -9,8 +12,6 @@
     margin: 20px;
   }
 </style>
-
-{% block search %}
 
   {% search_form cl %}
   {% advanced_search_form cl %}
