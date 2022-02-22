@@ -4,6 +4,15 @@
 <!-- Stylesheet connection -->
 {% block stylesheet %}
 <link rel="stylesheet" href="{% static 'django_admin_search/css/styles.css' %}">
+<style>
+    .advanced_search_form_body{
+      z-index: 1;
+    }
+    #submit-form{
+      margin: 20px;
+    }
+  </style>
+
 {% endblock %}
 
 {% block modal %}
@@ -36,9 +45,8 @@
         {% endblock %}
 
     </form>
-sdf
 {% endblock %}
-sdf
+
 {% block search_admin_button %}
     <div class="search_button">
         <!-- Link to open the modal -->
@@ -49,7 +57,7 @@ sdf
                     {% trans 'advanced search'|title %}
                 {% endblock %}
             </span>
-        </a>fsdfsdf
+        </a>
     </div>
 {% endblock %}
 
@@ -96,5 +104,5 @@ sdf
             return false;
         });
     </script>
-sdf
+
 {% endblock %}
