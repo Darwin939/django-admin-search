@@ -5,12 +5,10 @@
 {% block stylesheet %}
 <link rel="stylesheet" href="{% static 'django_admin_search/css/styles.css' %}">
 <style>
-    .advanced_search_form_body{
-      z-index: 1;
-    }
-    #submit-form{
-      margin: 20px;
-    }
+  thead{
+    position: relative;
+    z-index: 0;
+  }
   </style>
 
 {% endblock %}
